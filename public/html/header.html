@@ -1,0 +1,20 @@
+<header>
+    <div>
+        <img src="imgs/logo.png">
+        <ul>
+            <li><a>NOTÍCIAS</a></li>
+            <li><a>CRÍTICAS</a></li>
+            <li><a>ESTREIAS</a></li>
+            <li><a>COLUNA</a></li>
+        </ul>
+        <button onclick="togglePopup()"><img src="imgs/lupa.png"></button>
+    </div>
+</header>
+
+<div class="popup" id="popup">
+    <div class="overlay" onclick="togglePopup()"></div>
+    <div class="content">
+        <input type="text" name="pesquisa" id="pesquisa" placeholder="Faça sua busca">
+        <button type="button" id="submit"><img src="imgs/lupa.png"></button>
+    </div>
+</div>

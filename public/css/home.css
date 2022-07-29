@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #fff;
+}
+
+body{
+    background-color: #171C2F;
+}
+
+/* HEADER */
+
+header{
+    height: 75px;
+    background-color: #22283F;
+    padding: 0 30px;
+}
+
+header div{
+    max-width: 1075px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+}
+
+header div img{
+    height: 65px;
+}
+
+header div ul{
+    margin: auto 0;
+}
+
+header div ul li{
+    display: inline;
+}
+
+header div ul li a{
+    font-weight: 300;
+    cursor: pointer; 
+    transition: 0.2s;
+    margin: 0 15px;
+}
+
+header div ul li a:hover{
+    color: #00A7FF;
+}
+
+header div ul li:first-child{
+    margin-left: 35px;
+}
+
+header div button{
+    margin: auto 0;
+    height: 40px;
+    width: 40px;
+    border: 0;
+    border-radius: 50px;
+    background: transparent;
+    color: #171C2F;
+    cursor: pointer;
+    transition: 0.1s;
+    margin-left: auto;
+}
+
+header div button img{
+    height: 18px;
+    margin: auto;
+    padding: auto;
+    filter: brightness(0) invert(1);
+}
+
+header div button:hover{
+    background-color: #ffffff0a;
+}
+
+.popup .overlay{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 11;
+    display: none;
+}
+
+.popup .content{
+    background-color: #fff;
+    position: relative;
+    margin: 100px auto;
+    width: 70vw;
+    z-index: 12;
+    padding: 0;
+    display: flex;
+    transform: translateY(-100vh);
+    transition: 0.8s;
+}
+
+.popup .content #pesquisa{
+    width: 90%;
+    border: 0;
+    height: 55px;
+    color: #232941;
+    padding: 0 20px;
+    font-size: 24px;
+}
+
+.popup .content #pesquisa:focus{
+    outline: none;
+}
+
+.popup .content #pesquisa::placeholder{
+    font-size: 18px;
+}
+
+.popup .content #submit{
+    width: 10%;
+    min-width: 40px;
+    border: 0;
+    height: 55px;
+    background: transparent;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.popup .content #submit:hover{
+    background-color: #eeeeee;
+}
+
+.popup .content #submit img{
+    height: 24px;
+    opacity: .8;
+    filter: brightness(0.1);
+}
+
+.popup.active .overlay{
+    display: block;
+}
+
+.popup.active .content{
+    transform: translateY(0vh);
+}
+
+@media only screen and (max-width: 1024px) {
+    
+}
