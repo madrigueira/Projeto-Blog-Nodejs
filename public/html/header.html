@@ -1,5 +1,6 @@
 <header>
     <div>
+        <button class="btn-menu" id="btn-menu" onclick="toggleMenu()"><img src="imgs/menu.png"></button>
         <img src="imgs/logo.png">
         <ul>
             <li><a>NOTÍCIAS</a></li>
@@ -7,7 +8,7 @@
             <li><a>ESTREIAS</a></li>
             <li><a>COLUNA</a></li>
         </ul>
-        <button onclick="togglePopup()"><img src="imgs/lupa.png"></button>
+        <button onclick="togglePopup()" class="btn-pesquisa" id="btn-pesquisa"><img src="imgs/lupa.png"></button>
     </div>
 </header>
 
@@ -17,4 +18,14 @@
         <input type="text" name="pesquisa" id="pesquisa" placeholder="Faça sua busca">
         <button type="button" id="submit"><img src="imgs/lupa.png"></button>
     </div>
+</div>
+
+<div id="menu">
+    <button class="close-btn" onclick="toggleMenu()">✕</button>
+    <ul>
+        <li><a>NOTÍCIAS</a></li>
+        <li><a>CRÍTICAS</a></li>
+        <li><a>ESTREIAS</a></li>
+        <li><a>COLUNA</a></li>
+    </ul>
 </div>
