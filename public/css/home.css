@@ -92,14 +92,15 @@ header div button:hover{
 
 .popup .content{
     background-color: #fff;
-    position: relative;
+    position: fixed;
     margin: 100px auto;
     width: 70vw;
     z-index: 12;
     padding: 0;
     display: flex;
-    transform: translateY(-100vh);
+    transform: translateY(-100vh) translateX(-50%);
     transition: 0.8s;
+    left: 50%;
 }
 
 .popup .content #pesquisa{
@@ -144,7 +145,7 @@ header div button:hover{
 }
 
 .popup.active .content{
-    transform: translateY(0vh);
+    transform: translateY(0vh)  translateX(-50%);
 }
 
 header div .btn-menu, #menu{

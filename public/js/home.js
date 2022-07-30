@@ -1,5 +1,6 @@
 $(function(){
     $("#header").load("html/header.html");
+    $("#carousel").load("html/carousel.html");
 });
 
 function togglePopup(){
