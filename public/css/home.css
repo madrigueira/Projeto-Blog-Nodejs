@@ -249,7 +249,7 @@ header div .btn-menu{
     background-position: center right;
     background-repeat: no-repeat;
     background-size: cover;
-    mask-image: linear-gradient(to right, transparent 0%, black 30%);
+    -webkit-mask-image: linear-gradient(to right, transparent 0%, black 30%);
     margin-left: 25vw;
 }
 
