@@ -1,13 +1,44 @@
 <script>
-    new Splide( '.splide' ).mount();
+    const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});
+
 </script>
 
-<section class="splide">
-    <div class="splide__track">
-          <ul class="splide__list">
-              <li class="splide__slide">Slide 01</li>
-              <li class="splide__slide">Slide 02</li>
-              <li class="splide__slide">Slide 03</li>
-          </ul>
+<!-- Slider main container -->
+<div class="swiper">
+    <div class="swiper-wrapper">
+
+        <div class="swiper-slide slide">
+          <div class="bg" style="background-image: url('https://www.themoviedb.org/t/p/original/iQFcwSGbZXMkeyKrxbPnwnRo5fl.jpg');"></div>
+          <div class="container">
+            <div class="box">
+              <img src="https://www.themoviedb.org/t/p/original/2yb6AxqyeB0CeYg8kGxWfrMl7xZ.png">
+              <div>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer 
+                  feugiat lacinia justo sed malesuada. Sed non varius arcu. Sed tempus 
+                  cursus porta. Praesent porttitor venenatis. 
+                </p>
+              </div>
+              <br><br>
+              <a>Ver Mais ></a>
+            </div>
+          </div>
+        </div>
+
     </div>
-</section>
+  
+    <!-- If we need navigation buttons -->
+    <div class="swiper-button-prev slide-btn"></div>
+    <div class="swiper-button-next slide-btn"></div>
+</div>
+  

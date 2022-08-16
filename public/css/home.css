@@ -19,7 +19,7 @@ header{
 }
 
 header div{
-    max-width: 1075px;
+    max-width: 80vw;
     margin-left: auto;
     margin-right: auto;
     position: relative;
@@ -239,3 +239,52 @@ header div .btn-menu{
 }
 
 /* CAROUSEL */
+.slide{
+    height: 70vh;
+    background-color: #090E18;
+}
+
+.slide .bg{
+    height: 70vh;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    mask-image: linear-gradient(to right, transparent 0%, black 30%);
+    margin-left: 25vw;
+}
+
+.slide .container{
+    transform: translateY(-70vh);
+    padding: 0 30px;
+}
+
+.slide .container .box{
+    max-width: 80vw;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: 300;
+    font-size: 1em;
+    text-align: justify;
+}
+
+.slide .container .box img{
+    width: 45%;
+    padding-top: 3%;
+}
+
+.slide .container .box div{
+    width: 35vw;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    padding-top: 3%;
+}
+
+.slide-btn{
+    color: #fff;
+    transition: 0.2s;
+    padding: 0 50px;
+}
+
+.slide-btn:hover{
+    opacity: .4;
+}
